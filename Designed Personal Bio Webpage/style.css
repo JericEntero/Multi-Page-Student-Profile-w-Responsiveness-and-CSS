@@ -1,0 +1,205 @@
+/* 
+    External CSS File
+    This file contains all styles for index.html and contact.html
+*/
+
+/* GENERAL RESET AND BODY STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER STYLE */
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* FLEXBOX NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background-color: #374151;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #60a5fa;
+    color: #111827;
+}
+
+/* MAIN CONTAINER */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* PROFILE SECTION */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+/* HOBBIES SECTION */
+.hobbies-section {
+    margin-top: 25px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies-section h2 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.hobbies-section ul {
+    margin-left: 25px;
+}
+
+/* CONTACT SECTION */
+.contact-section,
+.info-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2,
+.info-section h2 {
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.contact-form button {
+    margin-top: 18px;
+    padding: 12px;
+    background-color: #0c162a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1b2644;
+}
+
+/* FOOTER STYLE */
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* 
+    MEDIA QUERY
+    When screen width is less than 600px,
+    the layout will adjust for smaller screens.
+*/
+@media (max-width: 600px) {
+
+    /* Changes background color on small screens */
+    body {
+        background-color: #091623;
+    }
+
+    /* Navbar links stack vertically */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Profile card stacks image and text vertically */
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
