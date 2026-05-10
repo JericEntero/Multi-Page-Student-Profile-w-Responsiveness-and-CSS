@@ -1,6 +1,6 @@
 Project Description
 
-This project is a responsive HTML and external CSS personal portfolio website. It's based on the Week 2-3 bio and contact pages, with some CSS styling added, a Flexbox navigation bar and some media queries for mobile responsiveness.
+This project is a responsive HTML and external CSS personal portfolio website. It's based on the Week 2-3 bio and contact pages, with some CSS styling added, a Flexbox navigation bar and media queries for mobile responsiveness.
 
  Pages Included
 This includes personal bio, profile image, and the hobbies list in the file named index.html
